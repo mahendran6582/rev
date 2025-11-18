@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name = "mysuite">
+<test name = "mytest">
+<classes>
+<class name = "Sep37.ttng1"/>
+<class name = "Sep37.testng"/>
+
+</classes>
+</test>
+</suite>

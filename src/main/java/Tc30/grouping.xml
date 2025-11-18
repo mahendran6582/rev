@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+<groups>
+<run>
+<include name="DataDriven"/>
+</run>
+</groups>
+ 
+  <!--<listeners>
+<listener class-name="Tc30.ExtentReportManager123"/>
+</listeners> -->
+ 
+  <test thread-count="5" name="Test">
+    <parameter name="os" value="windows"/>
+    <parameter name="br" value="chrome"/>
+    <classes>
+    <class name="Tc30.TC_01_TestRegister"/>
+    <class name="Tc30.Tc_02_TestLogin"/>
+    <class name="Tc30.Tc_03_TestDD"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

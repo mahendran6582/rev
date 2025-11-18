@@ -1,0 +1,38 @@
+package Sep36;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class table2 {
+
+	public static void main(String[] args) {
+		WebDriver driver = new ChromeDriver();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.get("https://testautomationpractice.blogspot.com/");
+		driver.manage().window().maximize();
+		
+		int noofrows = driver.findElements(By.xpath("//table[@name='BookTable']//tr")).size();
+		
+		System.out.println(noofrows);
+		int columns = driver.findElements(By.xpath("//table[@name='BookTable']//tr//th")).size();
+		
+		System.out.println(columns);
+
+		for(int r=2;r<=noofrows;r++)
+		{
+			for(int c=1;c<=columns;c++)
+			{
+				
+				String val = driver.findElement(By.xpath("//table[@name='BookTable']//tr["+r+"]/td["+c+"]")).getText();
+				System.out.println(val);
+			}
+				
+		}
+		
+
+	}
+
+}

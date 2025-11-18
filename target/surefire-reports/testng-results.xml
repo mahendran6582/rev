@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-11-17T10:09:43 PST" name="Suite" finished-at="2025-11-17T10:10:13 PST" duration-ms="29447">
+    <groups>
+      <group name="Master">
+        <method signature="TC_01_TestRegister.testregister()[pri:0, instance:Tc30.TC_01_TestRegister@3b69e7d1]" name="testregister" class="Tc30.TC_01_TestRegister"/>
+        <method signature="Tc_02_TestLogin.loginval()[pri:0, instance:Tc30.Tc_02_TestLogin@7e6f74c]" name="loginval" class="Tc30.Tc_02_TestLogin"/>
+      </group> <!-- Master -->
+      <group name="Sanity">
+        <method signature="Tc_02_TestLogin.loginval()[pri:0, instance:Tc30.Tc_02_TestLogin@7e6f74c]" name="loginval" class="Tc30.Tc_02_TestLogin"/>
+      </group> <!-- Sanity -->
+      <group name="Regression">
+        <method signature="TC_01_TestRegister.testregister()[pri:0, instance:Tc30.TC_01_TestRegister@3b69e7d1]" name="testregister" class="Tc30.TC_01_TestRegister"/>
+      </group> <!-- Regression -->
+    </groups>
+    <test started-at="2025-11-17T10:09:43 PST" name="ChromeTest" finished-at="2025-11-17T10:10:13 PST" duration-ms="29447">
+      <class name="Tc30.Tc_02_TestLogin">
+        <test-method is-config="true" signature="homePage(java.lang.String,java.lang.String)[pri:0, instance:Tc30.Tc_02_TestLogin@7e6f74c]" started-at="2025-11-17T10:10:07 PST" name="homePage" finished-at="2025-11-17T10:10:10 PST" duration-ms="3733" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePage -->
+        <test-method signature="loginval()[pri:0, instance:Tc30.Tc_02_TestLogin@7e6f74c]" started-at="2025-11-17T10:10:10 PST" name="loginval" finished-at="2025-11-17T10:10:13 PST" duration-ms="2304" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginval -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Tc30.Tc_02_TestLogin@7e6f74c]" started-at="2025-11-17T10:10:13 PST" name="teardown" finished-at="2025-11-17T10:10:13 PST" duration-ms="197" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- Tc30.Tc_02_TestLogin -->
+      <class name="Tc30.TC_01_TestRegister">
+        <test-method is-config="true" signature="homePage(java.lang.String,java.lang.String)[pri:0, instance:Tc30.TC_01_TestRegister@3b69e7d1]" started-at="2025-11-17T10:09:43 PST" name="homePage" finished-at="2025-11-17T10:09:58 PST" duration-ms="14448" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePage -->
+        <test-method signature="testregister()[pri:0, instance:Tc30.TC_01_TestRegister@3b69e7d1]" started-at="2025-11-17T10:09:58 PST" name="testregister" finished-at="2025-11-17T10:10:06 PST" duration-ms="8495" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testregister -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Tc30.TC_01_TestRegister@3b69e7d1]" started-at="2025-11-17T10:10:06 PST" name="teardown" finished-at="2025-11-17T10:10:07 PST" duration-ms="209" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- Tc30.TC_01_TestRegister -->
+    </test> <!-- ChromeTest -->
+  </suite> <!-- Suite -->
+</testng-results>
